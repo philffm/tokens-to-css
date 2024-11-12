@@ -202,11 +202,12 @@
 
     <textarea id="input" placeholder="Paste your JSON here... (⌘ + V)"></textarea>
     <button onclick="transformJSONToCSS(input.value)">Transform</button>
-    <h2>Output (⌘ + C)</h2>
+    <h2>Output</h2>
     <div class="output-container">
         <div class="button-wrapper">
-            <button onclick="copyToClipboard()">Copy</button>
-            <button onclick="saveToFile()">Save</button>
+            <button onclick="copyToClipboard()">Copy (⌘ + C)</button>
+            <button onclick="saveToFile('regular')">Save</button>
+            <button onclick="saveToFile('minified')">Save Minified</button>
         </div>
         <pre id="outputCSS"></pre>
     </div>
@@ -258,14 +259,14 @@
                 showToast("CSS copied to clipboard!");
             });
         }
-
-        function saveToFile() {
+        function saveToFile(type) {
             const output = document.getElementById('outputCSS').textContent;
-            const blob = new Blob([output], { type: 'text/css' });
+            const finalOutput = type === 'minified' ? minifyCSS(output) : output;
+            const blob = new Blob([finalOutput], { type: 'text/css' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'output.css';
+            a.download = `style${type === 'minified' ? '.min' : ''}.css`;
             a.click();
 
             showToast("CSS file saved!");
@@ -294,6 +295,18 @@
                 .replace(/^\d\.\s(.*)/gm, '<li>$1</li>')
                 .replace(/\n$/gim, '<br />')
                 .replace(/(?:__|[*#])|\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+        }
+
+        function minifyCSS(css) {
+            return css
+                .replace(/\/\*[\s\S]*?\*\//g, '')  // Remove comments
+                .replace(/\s*{\s*/g, '{')          // Remove space before and after {
+                .replace(/\s*}\s*/g, '}')          // Remove space before and after }
+                .replace(/\s*:\s*/g, ':')          // Remove space before and after :
+                .replace(/\s*;\s*/g, ';')          // Remove space before and after ;
+                .replace(/\s*,\s*/g, ',')          // Remove space before and after ,
+                .replace(/\s+/g, ' ')              // Collapse multiple spaces into one
+                .trim();                           // Trim leading and trailing spaces
         }
     </script>
 </body>
