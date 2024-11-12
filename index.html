@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turbo Token Transformer</title>
     <style>
+
+
+        /* add general styles */
+        :root {
+            --primary-color: #76a9fb;
+            --secondary-color: #f5f7fa;
+            --s-1: .25rem;
+            --s-2: .5rem;
+            --s-3: .75rem;
+            --s-4: 1rem;
+            --s-5: 1.5rem;
+            --s-6: 2rem;
+            --s-7: 2.5rem;
+            --s-8: 3rem;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background: linear-gradient(135deg, #f5f7fa, #e0ecff);
+            margin: var(--s-6) var(--s-7);
+            background: linear-gradient(135deg, var(--secondary-color), #e0ecff);
+            height: 100vh;
+            font-size: 16px;
         }
 
         textarea {
             width: 100%;
             height: 200px;
-            margin-bottom: 10px;
+            margin-bottom: var(--s-2);
             border: 2px solid #ddd;
-            border-radius: 5px;
+            border-radius: var(--s-4);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
         }
@@ -26,11 +44,11 @@
         button {
             display: block;
             margin: 0 auto;
-            padding: 12px 20px;
+            padding: var(--s-3) var(--s-5);
             font-size: 20px;
             background: linear-gradient(145deg, #e6e6e6, #ffffff);
             border: none;
-            border-radius: 10px;
+            border-radius: var(--s-3);
             box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
             transition: transform 0.2s, box-shadow 0.2s;
             cursor: pointer;
@@ -45,15 +63,16 @@
         }
         .output-controls {
             display: flex;
-            gap: 10px;
+            gap: var(--s-2);
             justify-content: center;
-            margin-top: 10px;
+            margin-top: var(--s-2);
+            flex-wrap: wrap;
         }
         pre {
             background-color: #f4f4f4;
-            padding: 10px;
+            padding: var(--s-2);
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: var(--s-2);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow-x: auto;
             white-space: pre-wrap;
@@ -70,8 +89,8 @@
             transform: translateX(-50%);
             background-color: #333;
             color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
+            padding: var(--s-3) var(--s-5);
+            border-radius: var(--s-2);
             opacity: 0;
             animation: toastShow 5s forwards;
         }

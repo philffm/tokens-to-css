@@ -2,6 +2,10 @@
 
 This tool transforms Figma Design tokens from JSON to usable CSS.
 
+## Changelog
+- 1.0.0 - Initial release
+- 1.1.0 - Added support for typography variables / avoid double variables in mode classes
+
 ## Usage
 
 1. Use Figma Plugin [variables2css ](https://www.figma.com/community/plugin/1261234393153346915) to export the tokens to JSON.
