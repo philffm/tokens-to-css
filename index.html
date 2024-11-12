@@ -166,15 +166,15 @@
                     const formattedText = formatMarkdown(text);
                     document.getElementById('readme').innerHTML = formattedText;
                     // add link to repo https://github.com/philffm/convert-figma-tokens
-                    document.getElementById('readme').innerHTML += '<p>Source code: <a href="https://github.com/philffm/convert-figma-tokens">https://github.com/philffm/convert-figma-tokens</a></p>';
+                    document.getElementById('readme').innerHTML += '<p>Source code: <a href="https://github.com/philffm/tokens-to-css">https://github.com/philffm/tokens-to-css</a></p>';
                 });
         }
 
         function formatMarkdown(markdown) {
             return markdown
-                .replace(/^### (.*$)/gim, '<h4>$1</h4>')
-                .replace(/^## (.*$)/gim, '<h3>$1</h3>')
-                .replace(/^# (.*$)/gim, '<h2>$1</h2>')
+                .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+                .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                .replace(/^# (.*$)/gim, '<h1>$1</h1>')
                 .replace(/^\s*\n\*\s/gm, '<ul>\n* ')
                 .replace(/^(\*\s.+)\s*\n([^\*])/gm, '$1\n</ul>\n\n$2')
                 .replace(/^\*\s(.*)/gm, '<li>$1</li>')
