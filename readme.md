@@ -1,8 +1,8 @@
-## Turbo Token Transformer
+# Turbo Token Transformer
 
 This tool transforms Figma Design tokens from JSON to usable CSS.
 
-### Usage
+## Usage
 
 1. Use Figma Plugin [variables2css ](https://www.figma.com/community/plugin/1261234393153346915) to export the tokens to JSON.
 2. Variable collection names should be `1_Core`, `2_Semantic`, `3_Components`.
