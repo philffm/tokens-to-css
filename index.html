@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Token Transformer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        textarea:focus {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 12px 20px;
+            font-size: 20px;
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+        }
+        button:active {
+            transform: translateY(1px);
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+        .output-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            color: #333;
+            max-height: 300px;
+        }
+        /* Toast Notification Styles */
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            opacity: 0;
+            animation: toastShow 5s forwards;
+        }
+
+        @keyframes toastShow {
+            0% {
+                opacity: 0;
+                top: 10px;
+            }
+            10% {
+                opacity: 1;
+                top: 20px;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                top: 10px;
+            }
+        }
+        #readme {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body onload="renderReadme()">
+    <!-- <h1>Turbo Token Transformer</h1> -->
+    <div id="readme">
+    </div>
+
+    <textarea id="input" placeholder="Paste your JSON here..."></textarea>
+    <button onclick="transformJSONToCSS(input.value)">Transform</button>
+    <h2>Output</h2>
+    <pre id="outputCSS"></pre>
+    <div class="output-controls">
+        <button onclick="copyToClipboard()">Copy</button>
+        <button onclick="saveToFile()">Save</button>
+    </div>
+
+    <div id="toastContainer"></div>
+
+    <script src="transform.js"></script>
+    <script>
+
+        function prettifyCSS(css) {
+            return css.split('\\n').map(line => `    ${line}`).join('\\n');
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.textContent = message;
+
+            const toastContainer = document.getElementById('toastContainer');
+            toastContainer.appendChild(toast);
+
+            setTimeout(() => {
+                toastContainer.removeChild(toast);
+            }, 5000); // Remove after 5 seconds
+        }
+
+        function copyToClipboard() {
+            const output = document.getElementById('outputCSS').textContent;
+            navigator.clipboard.writeText(output).then(() => {
+                showToast("CSS copied to clipboard!");
+            });
+        }
+
+        function saveToFile() {
+            const output = document.getElementById('outputCSS').textContent;
+            const blob = new Blob([output], { type: 'text/css' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'output.css';
+            a.click();
+
+            showToast("CSS file saved!");
+        }
+
+        function renderReadme() {
+            fetch('readme.md')
+                .then(response => response.text())
+                .then(text => {
+                    const formattedText = formatMarkdown(text);
+                    document.getElementById('readme').innerHTML = formattedText;
+                    // add link to repo https://github.com/philffm/convert-figma-tokens
+                    document.getElementById('readme').innerHTML += '<p>Source code: <a href="https://github.com/philffm/convert-figma-tokens">https://github.com/philffm/convert-figma-tokens</a></p>';
+                });
+        }
+
+        function formatMarkdown(markdown) {
+            return markdown
+                .replace(/^### (.*$)/gim, '<h4>$1</h4>')
+                .replace(/^## (.*$)/gim, '<h3>$1</h3>')
+                .replace(/^# (.*$)/gim, '<h2>$1</h2>')
+                .replace(/^\s*\n\*\s/gm, '<ul>\n* ')
+                .replace(/^(\*\s.+)\s*\n([^\*])/gm, '$1\n</ul>\n\n$2')
+                .replace(/^\*\s(.*)/gm, '<li>$1</li>')
+                .replace(/^\s*\n\d\.\s/gm, '<ol>\n1. ')
+                .replace(/^(\d\.\s.+)\s*\n([^\d\.])/gm, '$1\n</ol>\n\n$2')
+                .replace(/^\d\.\s(.*)/gm, '<li>$1</li>')
+                .replace(/\n$/gim, '<br />')
+                .replace(/(?:__|[*#])|\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+        }
+
+    </script>
+</body>
+</html>

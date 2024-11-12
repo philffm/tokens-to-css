@@ -1,0 +1,4023 @@
+[
+    {
+        "name": "3_Components",
+        "values": [
+            {
+                "mode": {
+                    "name": "default",
+                    "id": "3012:6"
+                },
+                "color": [
+                    {
+                        "name": "button/primary/default/bg",
+                        "value": "#ffffff",
+                        "var": "color/surface/solid/default",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "button/primary/default/fg",
+                        "value": "#18f2be",
+                        "var": "color/surface/on-surface/accent/subtle",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "button/primary/default/fg-mono",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/primary/disabled/bg",
+                        "value": "#f7f7f7",
+                        "var": "color/surface/solid/muted",
+                        "rootAlias": "color/grey/50"
+                    },
+                    {
+                        "name": "button/primary/disabled/fg",
+                        "value": "#9dffe8",
+                        "var": "color/surface/on-surface/accent/muted",
+                        "rootAlias": "color/brand/10"
+                    },
+                    {
+                        "name": "button/primary/focus/bg",
+                        "value": "#ffffff",
+                        "var": "color/surface/solid/strong",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "button/primary/focus/fg",
+                        "value": "#18f2be",
+                        "var": "color/surface/on-surface/accent/subtle",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "button/primary/focus/fg-mono",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/primary/hover/bg",
+                        "value": "#ffffff",
+                        "var": "color/surface/solid/strong",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "button/primary/hover/fg",
+                        "value": "#18f2be",
+                        "var": "color/surface/on-surface/accent/subtle",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "button/primary/hover/fg-mono",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/secondary/default/bg",
+                        "value": "#0000000d",
+                        "var": "color/surface/dim/default",
+                        "rootAlias": "color/dim/black/5"
+                    },
+                    {
+                        "name": "button/secondary/default/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/secondary/disabled/bg",
+                        "value": "#00000033",
+                        "var": "color/surface/dim/muted",
+                        "rootAlias": "color/dim/black/20"
+                    },
+                    {
+                        "name": "button/secondary/disabled/fg",
+                        "value": "#c2c2c2",
+                        "var": "color/surface/on-surface/disabled",
+                        "rootAlias": "color/grey/200"
+                    },
+                    {
+                        "name": "button/secondary/focus/bg",
+                        "value": "#0000000d",
+                        "var": "color/surface/dim/default",
+                        "rootAlias": "color/dim/black/5"
+                    },
+                    {
+                        "name": "button/secondary/focus/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/secondary/hover/bg",
+                        "value": "#0000001a",
+                        "var": "color/surface/dim/hover",
+                        "rootAlias": "color/dim/black/10"
+                    },
+                    {
+                        "name": "button/secondary/hover/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/tertiary/default/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/tertiary/focus/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "button/tertiary/hover/bg",
+                        "value": "#0000001a",
+                        "var": "color/surface/dim/hover",
+                        "rootAlias": "color/dim/black/10"
+                    },
+                    {
+                        "name": "button/tertiary/hover/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "card-tag/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "card-tag/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "form/input-field/default/bg",
+                        "value": "#0000000d",
+                        "var": "color/surface/dim/default",
+                        "rootAlias": "color/dim/black/5"
+                    },
+                    {
+                        "name": "form/input-field/default/fg",
+                        "value": "#5c5c5c",
+                        "var": "color/surface/on-surface/subtle",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "form/input-field/focused/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "form/input-field/focused/fg",
+                        "value": "#5c5c5c",
+                        "var": "color/surface/on-surface/subtle",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "form/input-field/hover/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "form/input-field/hover/fg",
+                        "value": "#5c5c5c",
+                        "var": "color/surface/on-surface/subtle",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "form/input-field/typing/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "form/input-field/typing/fg",
+                        "value": "#454545",
+                        "var": "color/surface/on-surface/default",
+                        "rootAlias": "color/grey/700"
+                    },
+                    {
+                        "name": "form/input-field/valid/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "form/input-field/valid/fg",
+                        "value": "#454545",
+                        "var": "color/surface/on-surface/default",
+                        "rootAlias": "color/grey/700"
+                    },
+                    {
+                        "name": "form/input-field/valid/fg-strong",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "hero-teaser/bg",
+                        "value": "#ffffff",
+                        "var": "color/surface/solid/default",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "hero-teaser/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "hero-teaser/fg-accent",
+                        "value": "#18f2be",
+                        "var": "color/surface/on-surface/accent/subtle",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "hero-teaser/fg-subtle",
+                        "value": "#5c5c5c",
+                        "var": "color/surface/on-surface/subtle",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "publication-card/default/bg",
+                        "value": "#ffffff",
+                        "var": "color/surface/solid/default",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "publication-card/default/fg",
+                        "value": "#000000",
+                        "var": "color/surface/on-surface/emphasis",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "publication-card/default/fg-subtle",
+                        "value": "#5c5c5c",
+                        "var": "color/surface/on-surface/subtle",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "publication-card/default/stroke",
+                        "value": "#f2f1f6",
+                        "var": "color/__archive_surface-NEW/light/solid/subtle",
+                        "rootAlias": "color/grey/60"
+                    },
+                    {
+                        "name": "publication-card/dim/bg",
+                        "value": "#0000000d",
+                        "var": "color/surface/dim/default",
+                        "rootAlias": "color/dim/black/5"
+                    },
+                    {
+                        "name": "publication-card/hover/bg",
+                        "value": "#00000026",
+                        "var": "color/surface/dim/subtle",
+                        "rootAlias": "color/dim/black/15"
+                    }
+                ],
+                "number": [],
+                "string": []
+            }
+        ]
+    },
+    {
+        "name": "1_Core",
+        "values": [
+            {
+                "mode": {
+                    "name": "CGIAR",
+                    "id": "3012:7"
+                },
+                "color": [
+                    {
+                        "name": "color/brand/10",
+                        "value": "#9dffe8",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/20",
+                        "value": "#58fbd4",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/30",
+                        "value": "#18f2be",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/40",
+                        "value": "#08d9a8",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/5",
+                        "value": "#e6fff9",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/50",
+                        "value": "#00b389",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/60",
+                        "value": "#008c6b",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/70",
+                        "value": "#06604b",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/80",
+                        "value": "#033529",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/90",
+                        "value": "#02221a",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/brand/99",
+                        "value": "#010d0a",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/10",
+                        "value": "#0000001a",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/15",
+                        "value": "#00000026",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/20",
+                        "value": "#00000033",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/30",
+                        "value": "#0000004d",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/40",
+                        "value": "#00000066",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/5",
+                        "value": "#0000000d",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/50",
+                        "value": "#00000080",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/60",
+                        "value": "#00000099",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/70",
+                        "value": "#000000b2",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/80",
+                        "value": "#000000cc",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/black/90",
+                        "value": "#000000e5",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/10",
+                        "value": "#ffffff1a",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/15",
+                        "value": "#ffffff26",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/20",
+                        "value": "#ffffff33",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/30",
+                        "value": "#ffffff4d",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/40",
+                        "value": "#ffffff66",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/5",
+                        "value": "#ffffff0d",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/50",
+                        "value": "#ffffff80",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/60",
+                        "value": "#ffffff99",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/70",
+                        "value": "#ffffffb2",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/80",
+                        "value": "#ffffffcc",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/dim/white/90",
+                        "value": "#ffffffe5",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/100",
+                        "value": "#cfcfcf",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/200",
+                        "value": "#c2c2c2",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/300",
+                        "value": "#b2b2b2",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/400",
+                        "value": "#acacac",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/50",
+                        "value": "#f7f7f7",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/500",
+                        "value": "#a1a1a1",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/60",
+                        "value": "#f2f1f6",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/600",
+                        "value": "#5c5c5c",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/70",
+                        "value": "#ececec",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/700",
+                        "value": "#454545",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/80",
+                        "value": "#e1e1e1",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/800",
+                        "value": "#2e2e2e",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/90",
+                        "value": "#d9d9d9",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/grey/900",
+                        "value": "#171717",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/neutrals/black",
+                        "value": "#000000",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/neutrals/white",
+                        "value": "#ffffff",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/100",
+                        "value": "#e2eef1",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/200",
+                        "value": "#c6dde4",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/300",
+                        "value": "#aaccd6",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/400",
+                        "value": "#8ebbc9",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/500",
+                        "value": "#72aabc",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/600",
+                        "value": "#5b8896",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/700",
+                        "value": "#446670",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/800",
+                        "value": "#2d444b",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/non-brand/900",
+                        "value": "#162225",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/green/400",
+                        "value": "#04e200",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/green/500",
+                        "value": "#03aa00",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/green/600",
+                        "value": "#026100",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/red/400",
+                        "value": "#f16f6f",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/red/500",
+                        "value": "#db1616",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "color/notification/red/600",
+                        "value": "#910d0d",
+                        "var": "",
+                        "rootAlias": ""
+                    }
+                ],
+                "number": [
+                    {
+                        "name": "dimension/0",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/1",
+                        "value": "0.0625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/2",
+                        "value": "0.125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/4",
+                        "value": "0.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/8",
+                        "value": "0.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/10",
+                        "value": "0.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/12",
+                        "value": "0.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/16",
+                        "value": "1rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/20",
+                        "value": "1.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/24",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/28",
+                        "value": "1.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/32",
+                        "value": "2rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/40",
+                        "value": "2.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/48",
+                        "value": "3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/56",
+                        "value": "3.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/60",
+                        "value": "3.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/64",
+                        "value": "4rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/80",
+                        "value": "5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/96",
+                        "value": "6rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/112",
+                        "value": "7rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/120",
+                        "value": "7.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/128",
+                        "value": "8rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/152",
+                        "value": "9.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/160",
+                        "value": "10rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/232",
+                        "value": "14.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/280",
+                        "value": "17.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/288",
+                        "value": "18rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/296",
+                        "value": "18.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "dimension/408",
+                        "value": "25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/1",
+                        "value": "0.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/2",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/3",
+                        "value": "1rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/4",
+                        "value": "1.125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/5",
+                        "value": "1.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/6",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/7",
+                        "value": "1.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/8",
+                        "value": "2rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/9",
+                        "value": "2.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/10",
+                        "value": "2.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/11",
+                        "value": "3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/12",
+                        "value": "4rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-size/13",
+                        "value": "4.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/letter-spacing/tight",
+                        "value": "-0.0625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/letter-spacing/none",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/letter-spacing/wide",
+                        "value": "0.0625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/10",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/11",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/12",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/13",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/4",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/5",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/6",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/7",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/8",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/9",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/2",
+                        "value": "0.0938rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/3",
+                        "value": "0.0938rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/1-150",
+                        "value": "1.125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    }
+                ],
+                "string": [
+                    {
+                        "name": "typography/font-families/1",
+                        "value": "Noto Sans",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-families/2",
+                        "value": "Proxima Nova",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Black",
+                        "value": "Black",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Bold",
+                        "value": "Bold",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Bold-Italic",
+                        "value": "Bold Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/ExtraBold",
+                        "value": "ExtraBold",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/ExtraLight",
+                        "value": "ExtraLight",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Extrabold-Italic",
+                        "value": "Extrabold Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Italic",
+                        "value": "Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Light",
+                        "value": "Light",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Light-Italic",
+                        "value": "Light Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Medium",
+                        "value": "Medium",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Medium-Italic",
+                        "value": "Medium Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Regular",
+                        "value": "Regular",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/SemiBold",
+                        "value": "SemiBold",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Semibold-Italic",
+                        "value": "Semibold Italic",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/font-weights/Thin",
+                        "value": "Thin",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/line-height/130",
+                        "value": "130%",
+                        "var": "",
+                        "rootAlias": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "2_Semantic",
+        "values": [
+            {
+                "mode": {
+                    "name": "Light",
+                    "id": "3012:10"
+                },
+                "color": [
+                    {
+                        "name": "color/surface/dim/active",
+                        "value": "#0000004d",
+                        "var": "color/dim/black/30",
+                        "rootAlias": "color/dim/black/30"
+                    },
+                    {
+                        "name": "color/surface/dim/default",
+                        "value": "#0000000d",
+                        "var": "color/dim/black/5",
+                        "rootAlias": "color/dim/black/5"
+                    },
+                    {
+                        "name": "color/surface/dim/error",
+                        "value": "#db1616",
+                        "var": "color/notification/red/500",
+                        "rootAlias": "color/notification/red/500"
+                    },
+                    {
+                        "name": "color/surface/dim/hover",
+                        "value": "#0000001a",
+                        "var": "color/dim/black/10",
+                        "rootAlias": "color/dim/black/10"
+                    },
+                    {
+                        "name": "color/surface/dim/muted",
+                        "value": "#00000033",
+                        "var": "color/dim/black/20",
+                        "rootAlias": "color/dim/black/20"
+                    },
+                    {
+                        "name": "color/surface/dim/subtle",
+                        "value": "#00000026",
+                        "var": "color/dim/black/15",
+                        "rootAlias": "color/dim/black/15"
+                    },
+                    {
+                        "name": "color/surface/dim/success",
+                        "value": "#026100",
+                        "var": "color/notification/green/600",
+                        "rootAlias": "color/notification/green/600"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/default",
+                        "value": "#ffffff",
+                        "var": "color/neutrals/white",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/disabled",
+                        "value": "#e1e1e1",
+                        "var": "color/grey/80",
+                        "rootAlias": "color/grey/80"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/subtle",
+                        "value": "#f2f1f6",
+                        "var": "color/grey/60",
+                        "rootAlias": "color/grey/60"
+                    },
+                    {
+                        "name": "color/surface/on-surface/default",
+                        "value": "#454545",
+                        "var": "color/grey/700",
+                        "rootAlias": "color/grey/700"
+                    },
+                    {
+                        "name": "color/surface/on-surface/disabled",
+                        "value": "#c2c2c2",
+                        "var": "color/grey/200",
+                        "rootAlias": "color/grey/200"
+                    },
+                    {
+                        "name": "color/surface/on-surface/emphasis",
+                        "value": "#000000",
+                        "var": "color/neutrals/black",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "color/surface/on-surface/error",
+                        "value": "#db1616",
+                        "var": "color/notification/red/500",
+                        "rootAlias": "color/notification/red/500"
+                    },
+                    {
+                        "name": "color/surface/on-surface/subtle",
+                        "value": "#5c5c5c",
+                        "var": "color/grey/600",
+                        "rootAlias": "color/grey/600"
+                    },
+                    {
+                        "name": "color/surface/on-surface/success",
+                        "value": "#03aa00",
+                        "var": "color/notification/green/500",
+                        "rootAlias": "color/notification/green/500"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/default",
+                        "value": "#00b389",
+                        "var": "color/brand/50",
+                        "rootAlias": "color/brand/50"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/muted",
+                        "value": "#9dffe8",
+                        "var": "color/brand/10",
+                        "rootAlias": "color/brand/10"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/subtle",
+                        "value": "#18f2be",
+                        "var": "color/brand/30",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "color/surface/secondary/default",
+                        "value": "#000000",
+                        "var": "color/neutrals/black",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "color/surface/secondary/disabled",
+                        "value": "#cfcfcf",
+                        "var": "color/grey/100",
+                        "rootAlias": "color/grey/100"
+                    },
+                    {
+                        "name": "color/surface/secondary/subtle",
+                        "value": "#454545",
+                        "var": "color/grey/700",
+                        "rootAlias": "color/grey/700"
+                    },
+                    {
+                        "name": "color/surface/solid/default",
+                        "value": "#ffffff",
+                        "var": "color/neutrals/white",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "color/surface/solid/error",
+                        "value": "#db1616",
+                        "var": "color/notification/red/500",
+                        "rootAlias": "color/notification/red/500"
+                    },
+                    {
+                        "name": "color/surface/solid/hover",
+                        "value": "#ececec",
+                        "var": "color/grey/70",
+                        "rootAlias": "color/grey/70"
+                    },
+                    {
+                        "name": "color/surface/solid/muted",
+                        "value": "#f7f7f7",
+                        "var": "color/grey/50",
+                        "rootAlias": "color/grey/50"
+                    },
+                    {
+                        "name": "color/surface/solid/strong",
+                        "value": "#ffffff",
+                        "var": "color/neutrals/white",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "color/surface/solid/subtle",
+                        "value": "#f2f1f6",
+                        "var": "color/grey/60",
+                        "rootAlias": "color/grey/60"
+                    },
+                    {
+                        "name": "color/surface/solid/success",
+                        "value": "#026100",
+                        "var": "color/notification/green/600",
+                        "rootAlias": "color/notification/green/600"
+                    }
+                ],
+                "number": [
+                    {
+                        "name": "border/radius/component",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/radius/image",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/radius/module",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/style/none",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/style/thin",
+                        "value": "0.0625rem",
+                        "var": "dimension/1",
+                        "rootAlias": "dimension/1"
+                    },
+                    {
+                        "name": "border/style/medium",
+                        "value": "0.125rem",
+                        "var": "dimension/2",
+                        "rootAlias": "dimension/2"
+                    },
+                    {
+                        "name": "border/style/thick",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPL/s1",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPL/s2",
+                        "value": "0.5rem",
+                        "var": "dimension/8",
+                        "rootAlias": "dimension/8"
+                    },
+                    {
+                        "name": "spacing/VPL/s3",
+                        "value": "0.75rem",
+                        "var": "dimension/12",
+                        "rootAlias": "dimension/12"
+                    },
+                    {
+                        "name": "spacing/VPL/s4",
+                        "value": "1rem",
+                        "var": "dimension/16",
+                        "rootAlias": "dimension/16"
+                    },
+                    {
+                        "name": "spacing/VPL/s5",
+                        "value": "1.5rem",
+                        "var": "dimension/24",
+                        "rootAlias": "dimension/24"
+                    },
+                    {
+                        "name": "spacing/VPL/s6",
+                        "value": "2rem",
+                        "var": "dimension/32",
+                        "rootAlias": "dimension/32"
+                    },
+                    {
+                        "name": "spacing/VPL/s7",
+                        "value": "3rem",
+                        "var": "dimension/48",
+                        "rootAlias": "dimension/48"
+                    },
+                    {
+                        "name": "spacing/VPL/s8",
+                        "value": "4rem",
+                        "var": "dimension/64",
+                        "rootAlias": "dimension/64"
+                    },
+                    {
+                        "name": "spacing/VPL/s9",
+                        "value": "6rem",
+                        "var": "dimension/96",
+                        "rootAlias": "dimension/96"
+                    },
+                    {
+                        "name": "spacing/VPL/s10",
+                        "value": "8rem",
+                        "var": "dimension/128",
+                        "rootAlias": "dimension/128"
+                    },
+                    {
+                        "name": "spacing/VPS/s1",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPS/s2",
+                        "value": "0.5rem",
+                        "var": "dimension/8",
+                        "rootAlias": "dimension/8"
+                    },
+                    {
+                        "name": "spacing/VPS/s3",
+                        "value": "0.75rem",
+                        "var": "dimension/12",
+                        "rootAlias": "dimension/12"
+                    },
+                    {
+                        "name": "spacing/VPS/s4",
+                        "value": "1rem",
+                        "var": "dimension/16",
+                        "rootAlias": "dimension/16"
+                    },
+                    {
+                        "name": "spacing/VPS/s5",
+                        "value": "1.25rem",
+                        "var": "dimension/20",
+                        "rootAlias": "dimension/20"
+                    },
+                    {
+                        "name": "spacing/VPS/s6",
+                        "value": "1.5rem",
+                        "var": "dimension/24",
+                        "rootAlias": "dimension/24"
+                    },
+                    {
+                        "name": "spacing/VPS/s7",
+                        "value": "2rem",
+                        "var": "dimension/32",
+                        "rootAlias": "dimension/32"
+                    },
+                    {
+                        "name": "spacing/VPS/s8",
+                        "value": "3rem",
+                        "var": "dimension/48",
+                        "rootAlias": "dimension/48"
+                    },
+                    {
+                        "name": "spacing/VPS/s9",
+                        "value": "4rem",
+                        "var": "dimension/64",
+                        "rootAlias": "dimension/64"
+                    },
+                    {
+                        "name": "spacing/VPS/s10",
+                        "value": "6rem",
+                        "var": "dimension/96",
+                        "rootAlias": "dimension/96"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/line-height",
+                        "value": "2.025rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/line-height",
+                        "value": "1.6875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-size",
+                        "value": "1.125rem",
+                        "var": "typography/font-size/4",
+                        "rootAlias": "typography/font-size/4"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/line-height",
+                        "value": "1.6875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-size",
+                        "value": "1.125rem",
+                        "var": "typography/font-size/4",
+                        "rootAlias": "typography/font-size/4"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/line-height",
+                        "value": "1.5187rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/line-height",
+                        "value": "1.125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/line-height",
+                        "value": "3.375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/md/letter-spacing",
+                        "value": "0.04rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-size",
+                        "value": "2rem",
+                        "var": "typography/font-size/8",
+                        "rootAlias": "typography/font-size/8"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/line-height",
+                        "value": "3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-size",
+                        "value": "3rem",
+                        "var": "typography/font-size/11",
+                        "rootAlias": "typography/font-size/11"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/line-height",
+                        "value": "4.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/letter-spacing",
+                        "value": "0.06rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-size",
+                        "value": "4rem",
+                        "var": "typography/font-size/12",
+                        "rootAlias": "typography/font-size/12"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/line-height",
+                        "value": "4.4rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/line-height",
+                        "value": "3.0375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/md/letter-spacing",
+                        "value": "0.03rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/line-height",
+                        "value": "2.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/line-height",
+                        "value": "3.375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/letter-spacing",
+                        "value": "0.0525rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-size",
+                        "value": "3rem",
+                        "var": "typography/font-size/11",
+                        "rootAlias": "typography/font-size/11"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/line-height",
+                        "value": "3.3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-size",
+                        "value": "1.75rem",
+                        "var": "typography/font-size/7",
+                        "rootAlias": "typography/font-size/7"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/line-height",
+                        "value": "2.3625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/md/letter-spacing",
+                        "value": "0.03rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/line-height",
+                        "value": "2.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-size",
+                        "value": "2rem",
+                        "var": "typography/font-size/8",
+                        "rootAlias": "typography/font-size/8"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/line-height",
+                        "value": "2.7rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/letter-spacing",
+                        "value": "0.0525rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/line-height",
+                        "value": "2.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    }
+                ],
+                "string": [
+                    {
+                        "name": "Logo",
+                        "value": "WL",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    }
+                ]
+            },
+            {
+                "mode": {
+                    "name": "Dark",
+                    "id": "3012:11"
+                },
+                "color": [
+                    {
+                        "name": "color/surface/dim/active",
+                        "value": "#ffffff4d",
+                        "var": "color/dim/white/30",
+                        "rootAlias": "color/dim/white/30"
+                    },
+                    {
+                        "name": "color/surface/dim/default",
+                        "value": "#ffffff0d",
+                        "var": "color/dim/white/5",
+                        "rootAlias": "color/dim/white/5"
+                    },
+                    {
+                        "name": "color/surface/dim/error",
+                        "value": "#910d0d",
+                        "var": "color/notification/red/600",
+                        "rootAlias": "color/notification/red/600"
+                    },
+                    {
+                        "name": "color/surface/dim/hover",
+                        "value": "#ffffff1a",
+                        "var": "color/dim/white/10",
+                        "rootAlias": "color/dim/white/10"
+                    },
+                    {
+                        "name": "color/surface/dim/muted",
+                        "value": "#ffffff33",
+                        "var": "color/dim/white/20",
+                        "rootAlias": "color/dim/white/20"
+                    },
+                    {
+                        "name": "color/surface/dim/subtle",
+                        "value": "#ffffff26",
+                        "var": "color/dim/white/15",
+                        "rootAlias": "color/dim/white/15"
+                    },
+                    {
+                        "name": "color/surface/dim/success",
+                        "value": "#03aa00",
+                        "var": "color/notification/green/500",
+                        "rootAlias": "color/notification/green/500"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/default",
+                        "value": "#ffffff",
+                        "var": "color/neutrals/white",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/disabled",
+                        "value": "#e1e1e1",
+                        "var": "color/grey/80",
+                        "rootAlias": "color/grey/80"
+                    },
+                    {
+                        "name": "color/surface/on-secondary/subtle",
+                        "value": "#f2f1f6",
+                        "var": "color/grey/60",
+                        "rootAlias": "color/grey/60"
+                    },
+                    {
+                        "name": "color/surface/on-surface/default",
+                        "value": "#f7f7f7",
+                        "var": "color/grey/50",
+                        "rootAlias": "color/grey/50"
+                    },
+                    {
+                        "name": "color/surface/on-surface/disabled",
+                        "value": "#a1a1a1",
+                        "var": "color/grey/500",
+                        "rootAlias": "color/grey/500"
+                    },
+                    {
+                        "name": "color/surface/on-surface/emphasis",
+                        "value": "#ffffff",
+                        "var": "color/neutrals/white",
+                        "rootAlias": "color/neutrals/white"
+                    },
+                    {
+                        "name": "color/surface/on-surface/error",
+                        "value": "#f16f6f",
+                        "var": "color/notification/red/400",
+                        "rootAlias": "color/notification/red/400"
+                    },
+                    {
+                        "name": "color/surface/on-surface/subtle",
+                        "value": "#ececec",
+                        "var": "color/grey/70",
+                        "rootAlias": "color/grey/70"
+                    },
+                    {
+                        "name": "color/surface/on-surface/success",
+                        "value": "#03aa00",
+                        "var": "color/notification/green/500",
+                        "rootAlias": "color/notification/green/500"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/default",
+                        "value": "#9dffe8",
+                        "var": "color/brand/10",
+                        "rootAlias": "color/brand/10"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/muted",
+                        "value": "#00b389",
+                        "var": "color/brand/50",
+                        "rootAlias": "color/brand/50"
+                    },
+                    {
+                        "name": "color/surface/on-surface/accent/subtle",
+                        "value": "#18f2be",
+                        "var": "color/brand/30",
+                        "rootAlias": "color/brand/30"
+                    },
+                    {
+                        "name": "color/surface/secondary/default",
+                        "value": "#000000",
+                        "var": "color/neutrals/black",
+                        "rootAlias": "color/neutrals/black"
+                    },
+                    {
+                        "name": "color/surface/secondary/disabled",
+                        "value": "#cfcfcf",
+                        "var": "color/grey/100",
+                        "rootAlias": "color/grey/100"
+                    },
+                    {
+                        "name": "color/surface/secondary/subtle",
+                        "value": "#454545",
+                        "var": "color/grey/700",
+                        "rootAlias": "color/grey/700"
+                    },
+                    {
+                        "name": "color/surface/solid/default",
+                        "value": "#033529",
+                        "var": "color/brand/80",
+                        "rootAlias": "color/brand/80"
+                    },
+                    {
+                        "name": "color/surface/solid/error",
+                        "value": "#db1616",
+                        "var": "color/notification/red/500",
+                        "rootAlias": "color/notification/red/500"
+                    },
+                    {
+                        "name": "color/surface/solid/hover",
+                        "value": "#06604b",
+                        "var": "color/brand/70",
+                        "rootAlias": "color/brand/70"
+                    },
+                    {
+                        "name": "color/surface/solid/muted",
+                        "value": "#e6fff9",
+                        "var": "color/brand/5",
+                        "rootAlias": "color/brand/5"
+                    },
+                    {
+                        "name": "color/surface/solid/strong",
+                        "value": "#010d0a",
+                        "var": "color/brand/99",
+                        "rootAlias": "color/brand/99"
+                    },
+                    {
+                        "name": "color/surface/solid/subtle",
+                        "value": "#008c6b",
+                        "var": "color/brand/60",
+                        "rootAlias": "color/brand/60"
+                    },
+                    {
+                        "name": "color/surface/solid/success",
+                        "value": "#026100",
+                        "var": "color/notification/green/600",
+                        "rootAlias": "color/notification/green/600"
+                    }
+                ],
+                "number": [
+                    {
+                        "name": "border/radius/component",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/radius/image",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/radius/module",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/style/none",
+                        "value": "0rem",
+                        "var": "dimension/0",
+                        "rootAlias": "dimension/0"
+                    },
+                    {
+                        "name": "border/style/thin",
+                        "value": "0.0625rem",
+                        "var": "dimension/1",
+                        "rootAlias": "dimension/1"
+                    },
+                    {
+                        "name": "border/style/medium",
+                        "value": "0.125rem",
+                        "var": "dimension/2",
+                        "rootAlias": "dimension/2"
+                    },
+                    {
+                        "name": "border/style/thick",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPL/s1",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPL/s2",
+                        "value": "0.5rem",
+                        "var": "dimension/8",
+                        "rootAlias": "dimension/8"
+                    },
+                    {
+                        "name": "spacing/VPL/s3",
+                        "value": "0.75rem",
+                        "var": "dimension/12",
+                        "rootAlias": "dimension/12"
+                    },
+                    {
+                        "name": "spacing/VPL/s4",
+                        "value": "1rem",
+                        "var": "dimension/16",
+                        "rootAlias": "dimension/16"
+                    },
+                    {
+                        "name": "spacing/VPL/s5",
+                        "value": "1.5rem",
+                        "var": "dimension/24",
+                        "rootAlias": "dimension/24"
+                    },
+                    {
+                        "name": "spacing/VPL/s6",
+                        "value": "2rem",
+                        "var": "dimension/32",
+                        "rootAlias": "dimension/32"
+                    },
+                    {
+                        "name": "spacing/VPL/s7",
+                        "value": "3rem",
+                        "var": "dimension/48",
+                        "rootAlias": "dimension/48"
+                    },
+                    {
+                        "name": "spacing/VPL/s8",
+                        "value": "4rem",
+                        "var": "dimension/64",
+                        "rootAlias": "dimension/64"
+                    },
+                    {
+                        "name": "spacing/VPL/s9",
+                        "value": "6rem",
+                        "var": "dimension/96",
+                        "rootAlias": "dimension/96"
+                    },
+                    {
+                        "name": "spacing/VPL/s10",
+                        "value": "8rem",
+                        "var": "dimension/128",
+                        "rootAlias": "dimension/128"
+                    },
+                    {
+                        "name": "spacing/VPS/s1",
+                        "value": "0.25rem",
+                        "var": "dimension/4",
+                        "rootAlias": "dimension/4"
+                    },
+                    {
+                        "name": "spacing/VPS/s2",
+                        "value": "0.5rem",
+                        "var": "dimension/8",
+                        "rootAlias": "dimension/8"
+                    },
+                    {
+                        "name": "spacing/VPS/s3",
+                        "value": "0.75rem",
+                        "var": "dimension/12",
+                        "rootAlias": "dimension/12"
+                    },
+                    {
+                        "name": "spacing/VPS/s4",
+                        "value": "1rem",
+                        "var": "dimension/16",
+                        "rootAlias": "dimension/16"
+                    },
+                    {
+                        "name": "spacing/VPS/s5",
+                        "value": "1.25rem",
+                        "var": "dimension/20",
+                        "rootAlias": "dimension/20"
+                    },
+                    {
+                        "name": "spacing/VPS/s6",
+                        "value": "1.5rem",
+                        "var": "dimension/24",
+                        "rootAlias": "dimension/24"
+                    },
+                    {
+                        "name": "spacing/VPS/s7",
+                        "value": "2rem",
+                        "var": "dimension/32",
+                        "rootAlias": "dimension/32"
+                    },
+                    {
+                        "name": "spacing/VPS/s8",
+                        "value": "3rem",
+                        "var": "dimension/48",
+                        "rootAlias": "dimension/48"
+                    },
+                    {
+                        "name": "spacing/VPS/s9",
+                        "value": "4rem",
+                        "var": "dimension/64",
+                        "rootAlias": "dimension/64"
+                    },
+                    {
+                        "name": "spacing/VPS/s10",
+                        "value": "6rem",
+                        "var": "dimension/96",
+                        "rootAlias": "dimension/96"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/line-height",
+                        "value": "2.025rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/line-height",
+                        "value": "1.6875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-size",
+                        "value": "1.125rem",
+                        "var": "typography/font-size/4",
+                        "rootAlias": "typography/font-size/4"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/line-height",
+                        "value": "1.6875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-size",
+                        "value": "1.125rem",
+                        "var": "typography/font-size/4",
+                        "rootAlias": "typography/font-size/4"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/line-height",
+                        "value": "1.5187rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/md/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/line-height",
+                        "value": "1.125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-size",
+                        "value": "0.75rem",
+                        "var": "typography/font-size/1",
+                        "rootAlias": "typography/font-size/1"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/line-height",
+                        "value": "0.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/line-height",
+                        "value": "1.625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/line-height",
+                        "value": "3.375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/md/letter-spacing",
+                        "value": "0.04rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-size",
+                        "value": "2rem",
+                        "var": "typography/font-size/8",
+                        "rootAlias": "typography/font-size/8"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/line-height",
+                        "value": "3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-size",
+                        "value": "3rem",
+                        "var": "typography/font-size/11",
+                        "rootAlias": "typography/font-size/11"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/line-height",
+                        "value": "4.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/letter-spacing",
+                        "value": "0.06rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-size",
+                        "value": "1rem",
+                        "var": "typography/font-size/3",
+                        "rootAlias": "typography/font-size/3"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/line-height",
+                        "value": "1.5rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-size",
+                        "value": "4rem",
+                        "var": "typography/font-size/12",
+                        "rootAlias": "typography/font-size/12"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/line-height",
+                        "value": "4.4rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-size",
+                        "value": "2.25rem",
+                        "var": "typography/font-size/9",
+                        "rootAlias": "typography/font-size/9"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/line-height",
+                        "value": "3.0375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/md/letter-spacing",
+                        "value": "0.03rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/line-height",
+                        "value": "2.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/line-height",
+                        "value": "3.375rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/letter-spacing",
+                        "value": "0.0525rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-size",
+                        "value": "3rem",
+                        "var": "typography/font-size/11",
+                        "rootAlias": "typography/font-size/11"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/line-height",
+                        "value": "3.3rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-size",
+                        "value": "1.75rem",
+                        "var": "typography/font-size/7",
+                        "rootAlias": "typography/font-size/7"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/line-height",
+                        "value": "2.3625rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/md/letter-spacing",
+                        "value": "0.03rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-size",
+                        "value": "1.5rem",
+                        "var": "typography/font-size/6",
+                        "rootAlias": "typography/font-size/6"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/line-height",
+                        "value": "2.25rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/letter-spacing",
+                        "value": "0.05rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-size",
+                        "value": "1.25rem",
+                        "var": "typography/font-size/5",
+                        "rootAlias": "typography/font-size/5"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/line-height",
+                        "value": "1.875rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-size",
+                        "value": "2rem",
+                        "var": "typography/font-size/8",
+                        "rootAlias": "typography/font-size/8"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/line-height",
+                        "value": "2.7rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/letter-spacing",
+                        "value": "0.0525rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-size",
+                        "value": "0.875rem",
+                        "var": "typography/font-size/2",
+                        "rootAlias": "typography/font-size/2"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/line-height",
+                        "value": "1.3125rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/letter-spacing",
+                        "value": "0rem",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-size",
+                        "value": "2.5rem",
+                        "var": "typography/font-size/10",
+                        "rootAlias": "typography/font-size/10"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/line-height",
+                        "value": "2.75rem",
+                        "var": "",
+                        "rootAlias": ""
+                    }
+                ],
+                "string": [
+                    {
+                        "name": "Logo",
+                        "value": "WL",
+                        "var": "",
+                        "rootAlias": ""
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPL/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPM/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/lg/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/md/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/sm/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xs (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-family",
+                        "value": "Proxima Nova",
+                        "var": "typography/font-families/2",
+                        "rootAlias": "typography/font-families/2"
+                    },
+                    {
+                        "name": "typography/body/VPS/xxl (unused)/font-weight",
+                        "value": "Regular",
+                        "var": "typography/font-weights/Regular",
+                        "rootAlias": "typography/font-weights/Regular"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPL/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPM/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/lg/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/md/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/sm/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xl/font-weight",
+                        "value": "SemiBold",
+                        "var": "typography/font-weights/SemiBold",
+                        "rootAlias": "typography/font-weights/SemiBold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xs/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-family",
+                        "value": "Noto Sans",
+                        "var": "typography/font-families/1",
+                        "rootAlias": "typography/font-families/1"
+                    },
+                    {
+                        "name": "typography/title/VPS/xxl/font-weight",
+                        "value": "Bold",
+                        "var": "typography/font-weights/Bold",
+                        "rootAlias": "typography/font-weights/Bold"
+                    }
+                ]
+            }
+        ]
+    }
+]
