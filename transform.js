@@ -1,7 +1,9 @@
 function transformJSONToCSS(jsonString) {
-    let coreCSS = '';
-    let semanticCSS = '';
-    let componentCSS = '';
+    const cssSections = {
+        core: '',
+        semantic: '',
+        component: ''
+    };
 
     try {
         console.log('🔍 Starting JSON parsing...');
@@ -18,93 +20,126 @@ function transformJSONToCSS(jsonString) {
 
             if (item.name === "1_Core") {
                 console.log('🎨 Processing Core Variables...');
-                coreCSS += '/* Core Variables */\n<span class="css-selector">:root</span> {\n';
+                cssSections.core += '/* Core Variables */\n:root {\n';
                 item.values.forEach(value => {
                     if (value.color) {
                         value.color.forEach(colorItem => {
                             if (colorItem.name && colorItem.value && !colorItem.name.includes('unused')) {
-                                coreCSS += `  <span class="css-property">--${colorItem.name.replace(/\//g, '-')}</span>: <span class="css-value">${colorItem.value}</span>;\n`;
+                                cssSections.core += `  --${formatVariableName(colorItem.name)}: ${colorItem.value};\n`;
                             }
                         });
                     }
                     if (value.number) {
                         value.number.forEach(numberItem => {
                             if (numberItem.name && numberItem.value && !numberItem.name.includes('unused')) {
-                                coreCSS += `  <span class="css-property">--${numberItem.name.replace(/\//g, '-')}</span>: <span class="css-value">${numberItem.value}</span>;\n`;
+                                cssSections.core += `  --${formatVariableName(numberItem.name)}: ${numberItem.value};\n`;
                             }
                         });
                     }
                 });
-                coreCSS += '}\n\n';
+                cssSections.core += '}\n\n';
                 console.log('✅ Core Variables processed!');
             } else if (item.name === "2_Semantic") {
                 console.log('🌈 Processing Semantic Variables...');
-                semanticCSS += '/* Semantic Variables */\n<span class="css-selector">:root</span> {\n';
+                cssSections.semantic += '/* Semantic Variables */\n:root {\n';
 
                 item.values.forEach(value => {
                     if (value.number) {
                         value.number.forEach(numberItem => {
                             if (numberItem.name && numberItem.var && !numberItem.name.includes('unused')) {
-                                semanticCSS += `  <span class="css-property">--${numberItem.name.replace(/\//g, '-')}</span>: <span class="css-value">var(--${numberItem.var.replace(/\//g, '-')})</span>;\n`;
+                                cssSections.semantic += `  --${formatVariableName(numberItem.name)}: var(--${formatVariableName(numberItem.var)});\n`;
                             }
                         });
                     }
                 });
 
                 item.values.forEach(value => {
-                    if (value.mode && value.mode.name) {
-                        const modeClass = value.mode.name.toLowerCase();
-                        semanticCSS += `<span class="css-selector">.${modeClass}</span> {\n`;
-                        if (value.color) {
-                            value.color.forEach(colorItem => {
-                                if (colorItem.name && colorItem.var && !colorItem.name.includes('unused')) {
-                                    semanticCSS += `  <span class="css-property">--${colorItem.name.replace(/\//g, '-')}</span>: <span class="css-value">var(--${colorItem.var.replace(/\//g, '-')})</span>;\n`;
-                                }
-                            });
-                        }
-                        semanticCSS += '}\n\n';
+                    if (value.color) {
+                        value.color.forEach(colorItem => {
+                            if (colorItem.name && colorItem.var && !colorItem.name.includes('unused') && colorItem.name.includes('fixed')) {
+                                cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
+                            }
+                        });
                     }
                 });
 
-                semanticCSS += '}\n\n';
+                cssSections.semantic += '}\n\n';
+
+                item.values.forEach(value => {
+                    if (value.mode && value.mode.name) {
+                        const modeClass = value.mode.name.toLowerCase();
+                        cssSections.semantic += `.${modeClass} {\n`;
+                        if (value.color) {
+                            value.color.forEach(colorItem => {
+                                if (colorItem.name && colorItem.var && !colorItem.name.includes('unused') && !colorItem.name.includes('fixed')) {
+                                    cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
+                                }
+                            });
+                        }
+                        cssSections.semantic += '}\n\n';
+                    }
+                });
+
                 console.log('✅ Semantic Variables processed!');
             } else if (item.name === "3_Components") {
                 console.log('🧩 Processing Component Variables...');
-                componentCSS += '/* Component Variables */\n<span class="css-selector">:root</span> {\n';
+                cssSections.component += '/* Component Variables */\n:root {\n';
                 item.values.forEach(value => {
                     if (value.color) {
                         value.color.forEach(colorItem => {
                             if (colorItem.name && colorItem.var && !colorItem.name.includes('unused')) {
-                                componentCSS += `  <span class="css-property">--${colorItem.name.replace(/\//g, '-')}</span>: <span class="css-value">var(--${colorItem.var.replace(/\//g, '-')})</span>;\n`;
+                                cssSections.component += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
                             }
                         });
                     }
                     if (value.typography) {
                         value.typography.forEach(typographyItem => {
                             if (typographyItem.name && typographyItem.var && !typographyItem.name.includes('unused')) {
-                                componentCSS += `  <span class="css-property">--${typographyItem.name.replace(/\//g, '-')}</span>: <span class="css-value">var(--${typographyItem.var.replace(/\//g, '-')})</span>;\n`;
+                                cssSections.component += `  --${formatVariableName(typographyItem.name)}: var(--${formatVariableName(typographyItem.var)});\n`;
                             }
                         });
                     }
                 });
-                componentCSS += '}\n\n';
+                cssSections.component += '}\n\n';
                 console.log('✅ Component Variables processed!');
             }
         });
 
     } catch (error) {
-        coreCSS = 'Invalid JSON input';
+        cssSections.core = 'Invalid JSON input';
         console.error('🚨 Oops! Something went wrong while parsing JSON! 🚨');
         console.error('🔍 Error Details:', error);
         console.error('📄 Please check your JSON format and try again.');
     }
 
-    const cssOutput = coreCSS + semanticCSS + componentCSS;
-    document.getElementById('outputCSS').innerHTML = cssOutput;
+    // Cleanup function to remove duplicates
+    function cleanCSSSection(section) {
+        const lines = section.split('\n');
+        const seen = new Set();
+        return lines.filter(line => {
+            const trimmedLine = line.trim();
+            if (trimmedLine === '' || seen.has(trimmedLine)) {
+                return false;
+            }
+            seen.add(trimmedLine);
+            return true;
+        }).join('\n');
+    }
 
-    return { coreCSS, semanticCSS, componentCSS };
+    // Clean each section
+    for (const section in cssSections) {
+        cssSections[section] = cleanCSSSection(cssSections[section]);
+    }
+
+    const cssOutput = cssSections.core + cssSections.semantic + cssSections.component;
+    document.getElementById('outputCSS').textContent = cssOutput;
+
+    return cssSections;
 }
 
+function formatVariableName(name) {
+    return name.replace(/[\s/]/g, '-');
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('keydown', function (event) {
