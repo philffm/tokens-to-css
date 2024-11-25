@@ -133,78 +133,17 @@ function transformJSONToCSS(jsonString) {
     // Combine CSS sections
     const cssOutput = cssSections.core + cssSections.semantic + cssSections.component;
 
-    // Load component mapping from JSON file
-    fetch('components.json')
-        .then(response => response.json())
-        .then(componentMapping => {
-            // Cluster and comment CSS
-            const clusteredCSS = clusterAndCommentCSS(cssOutput, componentMapping);
+    // Filter out lines that contain '_unused'
+    const filteredCSS = cssOutput.split('\n').filter(line => !line.trim().includes('_unused')).join('\n');
 
-            // Output the clustered CSS
-            document.getElementById('outputCSS').textContent = clusteredCSS;
-        })
-        .catch(error => {
-            console.error('🚨 Failed to load component mapping:', error);
-        });
+    // Output the filtered CSS
+    document.getElementById('outputCSS').textContent = filteredCSS;
 
     return cssSections;
 }
 
 function formatVariableName(name) {
     return name.replace(/[\s/]/g, '-');
-}
-
-function clusterAndCommentCSS(cssString, componentMapping) {
-    // Filter out lines that contain '_unused' at the start
-    const lines = cssString.split('\n').filter(line => !line.trim().includes('_unused'));
-    let clusteredCSS = ':root {\n';
-    const categoryMap = {};
-
-    lines.forEach(line => {
-        const trimmedLine = line.trim();
-
-        if (trimmedLine.startsWith('--')) {
-            const variableName = trimmedLine.split(':')[0].trim();
-            let matched = false;
-
-            for (const component of componentMapping.components) {
-                if (component.cssClasses.some(cssClass => new RegExp(cssClass).test(variableName))) {
-                    if (!categoryMap[component.name]) {
-                        categoryMap[component.name] = [];
-                    }
-                    categoryMap[component.name].push(line);
-                    matched = true;
-                    break;
-                }
-            }
-
-            if (!matched) {
-                if (!categoryMap['General']) {
-                    categoryMap['General'] = [];
-                }
-                categoryMap['General'].push(line);
-            }
-        } else {
-            // Handle non-variable lines, including closing brackets
-            if (!categoryMap['General']) {
-                categoryMap['General'] = [];
-            }
-            categoryMap['General'].push(line);
-        }
-    });
-
-    // Append all variables into a single :root block with comments
-    for (const [category, lines] of Object.entries(categoryMap)) {
-        clusteredCSS += `  /* ${category} */\n`;
-        lines.forEach(line => {
-            clusteredCSS += `  ${line}\n`;
-        });
-        clusteredCSS += '\n';
-    }
-
-    clusteredCSS += '}\n';
-
-    return clusteredCSS;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
