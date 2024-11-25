@@ -37,7 +37,8 @@ function transformJSONToCSS(jsonString) {
                         });
                     }
                 });
-                cssSections.core += '}\n\n';
+                cssSections.core += '}\n\n\n';
+                console.log(cssSections.core);
                 console.log('✅ Core Variables processed!');
             } else if (item.name === "2_Semantic") {
                 console.log('🌈 Processing Semantic Variables...');
@@ -76,7 +77,7 @@ function transformJSONToCSS(jsonString) {
                                 }
                             });
                         }
-                        cssSections.semantic += '}\n\n';
+                        cssSections.semantic += '}\n';
                     }
                 });
 
@@ -112,24 +113,6 @@ function transformJSONToCSS(jsonString) {
         console.error('📄 Please check your JSON format and try again.');
     }
 
-    // Cleanup function to remove duplicates
-    function cleanCSSSection(section) {
-        const lines = section.split('\n');
-        const seen = new Set();
-        return lines.filter(line => {
-            const trimmedLine = line.trim();
-            if (trimmedLine === '' || seen.has(trimmedLine)) {
-                return false;
-            }
-            seen.add(trimmedLine);
-            return true;
-        }).join('\n');
-    }
-
-    // Clean each section
-    for (const section in cssSections) {
-        cssSections[section] = cleanCSSSection(cssSections[section]);
-    }
 
     const cssOutput = cssSections.core + cssSections.semantic + cssSections.component;
     document.getElementById('outputCSS').textContent = cssOutput;
