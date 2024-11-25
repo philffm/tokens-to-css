@@ -1,0 +1,55 @@
+{
+    "components": [
+        {
+            "name": "Buttons",
+            "cssClasses": [
+                "button-.*"
+            ]
+        },
+        {
+            "name": "Input",
+            "cssClasses": [
+                "form-input-field.*",
+                "checkbox.*",
+                "radio.*",
+                "select.*"
+            ]
+        },
+        {
+            "name": "Card",
+            "cssClasses": [
+                "card.*",
+                "publication-card.*"
+            ]
+        },
+        {
+            "name": "Content",
+            "cssClasses": [
+                "headline.*",
+                "image.*",
+                "video.*",
+                "text.*",
+                "teaser.*",
+                "list*",
+                "slider.*"
+            ]
+        },
+        {
+            "name": "Accordion",
+            "cssClasses": [
+                "accordion.*"
+            ]
+        },
+        {
+            "name": "Generic",
+            "cssClasses": [
+                "container.*",
+                "header.*",
+                "footer.*",
+                "nav.*",
+                "section.*",
+                "teaser.*"
+            ]
+        }
+    ]
+}
