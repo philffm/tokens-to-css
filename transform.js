@@ -10,10 +10,25 @@ function transformJSONToCSS(jsonString) {
         const jsonData = JSON.parse(jsonString);
         console.log('✅ JSON parsed successfully!');
 
-        const totalItems = jsonData.length;
+        // Filter out unused items at the beginning
+        const filteredData = jsonData.map(item => {
+            return {
+                ...item,
+                values: item.values.map(value => {
+                    return {
+                        ...value,
+                        color: value.color ? value.color.filter(colorItem => !colorItem.name.includes('unused')) : [],
+                        number: value.number ? value.number.filter(numberItem => !numberItem.name.includes('unused')) : [],
+                        typography: value.typography ? value.typography.filter(typographyItem => !typographyItem.name.includes('unused')) : []
+                    };
+                })
+            };
+        });
+
+        const totalItems = filteredData.length;
         let processedItems = 0;
 
-        jsonData.forEach((item) => {
+        filteredData.forEach((item) => {
             processedItems++;
             const progress = ((processedItems / totalItems) * 100).toFixed(2);
             console.log(`🔄 Processing item ${processedItems} of ${totalItems} (${progress}%)`);
@@ -22,20 +37,27 @@ function transformJSONToCSS(jsonString) {
                 console.log('🎨 Processing Core Variables...');
                 cssSections.core += '/* Core Variables */\n:root {\n';
                 item.values.forEach(value => {
-                    if (value.color) {
-                        value.color.forEach(colorItem => {
-                            if (colorItem.name && colorItem.value && !colorItem.name.includes('unused')) {
-                                cssSections.core += `  --${formatVariableName(colorItem.name)}: ${colorItem.value};\n`;
-                            }
-                        });
-                    }
-                    if (value.number) {
-                        value.number.forEach(numberItem => {
-                            if (numberItem.name && numberItem.value && !numberItem.name.includes('unused')) {
-                                cssSections.core += `  --${formatVariableName(numberItem.name)}: ${numberItem.value};\n`;
-                            }
-                        });
-                    }
+                    value.color.forEach(colorItem => {
+                        if (colorItem.name && colorItem.value) {
+                            cssSections.core += `  --${formatVariableName(colorItem.name)}: ${colorItem.value};\n`;
+                        }
+                    });
+                    value.number.forEach(numberItem => {
+                        if (numberItem.name && numberItem.value) {
+                            cssSections.core += `  --${formatVariableName(numberItem.name)}: ${numberItem.value};\n`;
+                        }
+                    });
+                    value.typography.forEach(typographyItem => {
+                        if (typographyItem.name && typographyItem.value) {
+                            cssSections.core += `  --${formatVariableName(typographyItem.name)}: "${typographyItem.value}";\n`;
+                        }
+                    });
+                    // add also string values
+                    value.string.forEach(stringItem => {
+                        if (stringItem.name && stringItem.value) {
+                            cssSections.core += `  --${formatVariableName(stringItem.name)}: "${stringItem.value}";\n`;
+                        }
+                    });
                 });
                 cssSections.core += '}\n';
                 console.log(cssSections.core);
@@ -45,23 +67,24 @@ function transformJSONToCSS(jsonString) {
                 cssSections.semantic += '/* Semantic Variables */\n:root {\n';
 
                 item.values.forEach(value => {
-                    if (value.number) {
-                        value.number.forEach(numberItem => {
-                            if (numberItem.name && numberItem.var && !numberItem.name.includes('unused')) {
-                                cssSections.semantic += `  --${formatVariableName(numberItem.name)}: var(--${formatVariableName(numberItem.var)});\n`;
-                            }
-                        });
-                    }
+                    value.number.forEach(numberItem => {
+                        if (numberItem.name && numberItem.var) {
+                            cssSections.semantic += `  --${formatVariableName(numberItem.name)}: var(--${formatVariableName(numberItem.var)});\n`;
+                        }
+                    });
+                    value.typography.forEach(typographyItem => {
+                        if (typographyItem.name && typographyItem.var) {
+                            cssSections.semantic += `  --${formatVariableName(typographyItem.name)}: var(--${formatVariableName(typographyItem.var)});\n`;
+                        }
+                    });
                 });
 
                 item.values.forEach(value => {
-                    if (value.color) {
-                        value.color.forEach(colorItem => {
-                            if (colorItem.name && colorItem.var && !colorItem.name.includes('unused') && colorItem.name.includes('fixed')) {
-                                cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
-                            }
-                        });
-                    }
+                    value.color.forEach(colorItem => {
+                        if (colorItem.name && colorItem.var && colorItem.name.includes('fixed')) {
+                            cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
+                        }
+                    });
                 });
 
                 cssSections.semantic += '}\n\n';
@@ -70,13 +93,11 @@ function transformJSONToCSS(jsonString) {
                     if (value.mode && value.mode.name) {
                         const modeClass = value.mode.name.toLowerCase();
                         cssSections.semantic += `.${modeClass} {\n`;
-                        if (value.color) {
-                            value.color.forEach(colorItem => {
-                                if (colorItem.name && colorItem.var && !colorItem.name.includes('unused') && !colorItem.name.includes('fixed')) {
-                                    cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
-                                }
-                            });
-                        }
+                        value.color.forEach(colorItem => {
+                            if (colorItem.name && colorItem.var && !colorItem.name.includes('fixed')) {
+                                cssSections.semantic += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
+                            }
+                        });
                         cssSections.semantic += '}\n';
                     }
                 });
@@ -86,20 +107,16 @@ function transformJSONToCSS(jsonString) {
                 console.log('🧩 Processing Component Variables...');
                 cssSections.component += '/* Component Variables */\n:root {\n';
                 item.values.forEach(value => {
-                    if (value.color) {
-                        value.color.forEach(colorItem => {
-                            if (colorItem.name && colorItem.var && !colorItem.name.includes('unused')) {
-                                cssSections.component += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
-                            }
-                        });
-                    }
-                    if (value.typography) {
-                        value.typography.forEach(typographyItem => {
-                            if (typographyItem.name && typographyItem.var && !typographyItem.name.includes('unused')) {
-                                cssSections.component += `  --${formatVariableName(typographyItem.name)}: var(--${formatVariableName(typographyItem.var)});\n`;
-                            }
-                        });
-                    }
+                    value.color.forEach(colorItem => {
+                        if (colorItem.name && colorItem.var) {
+                            cssSections.component += `  --${formatVariableName(colorItem.name)}: var(--${formatVariableName(colorItem.var)});\n`;
+                        }
+                    });
+                    value.typography.forEach(typographyItem => {
+                        if (typographyItem.name && typographyItem.var) {
+                            cssSections.component += `  --${formatVariableName(typographyItem.name)}: var(--${formatVariableName(typographyItem.var)});\n`;
+                        }
+                    });
                 });
                 cssSections.component += '}\n\n';
                 console.log('✅ Component Variables processed!');
@@ -138,14 +155,15 @@ function formatVariableName(name) {
 }
 
 function clusterAndCommentCSS(cssString, componentMapping) {
-    const lines = cssString.split('\n');
+    // Filter out lines that contain '_unused' at the start
+    const lines = cssString.split('\n').filter(line => !line.trim().includes('_unused'));
     let clusteredCSS = ':root {\n';
     const categoryMap = {};
 
     lines.forEach(line => {
         const trimmedLine = line.trim();
 
-        if (trimmedLine.startsWith('--') && !trimmedLine.includes('_unused')) {
+        if (trimmedLine.startsWith('--')) {
             const variableName = trimmedLine.split(':')[0].trim();
             let matched = false;
 
@@ -166,7 +184,7 @@ function clusterAndCommentCSS(cssString, componentMapping) {
                 }
                 categoryMap['General'].push(line);
             }
-        } else if (!trimmedLine.startsWith('--')) {
+        } else {
             // Handle non-variable lines, including closing brackets
             if (!categoryMap['General']) {
                 categoryMap['General'] = [];
